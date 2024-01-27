@@ -10,5 +10,6 @@ for line in sys.stdin:
     words = line.split()
 
     # output tuples (word, 1) in tab-delimited format
+    stopwords = set(['the', 'and', 'a', 'for', 'i', 'go', 'be', 'to', 'be', 'railings'])
     for word in words:
         print '%s\t%s' % (word, "1")
